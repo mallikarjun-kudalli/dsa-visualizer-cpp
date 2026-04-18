@@ -158,10 +158,10 @@ If no font is found, the app exits with an error message.
 ## 📸 Screenshots
 
 ### 🔢 Sorting Visualization
-![Sorting](assets/screenshot.png)
+![Sorting](assets/Screenshot.png)
 
 ### 🌐 Graph Visualization
-![Graph](assets/screenshot1.png)
+![Graph](assets/Screenshot1.png)
 
 ---
 

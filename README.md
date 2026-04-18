@@ -155,7 +155,13 @@ If no font is found, the app exits with an error message.
 
 ## 📸 Demo
 
-👉 Add your screenshot here (very important for recruiters)
+## 📸 Screenshots
+
+### 🔢 Sorting Visualization
+![Sorting](assets/screenshot.png)
+
+### 🌐 Graph Visualization
+![Graph](assets/screenshot1.png)
 
 ---
 

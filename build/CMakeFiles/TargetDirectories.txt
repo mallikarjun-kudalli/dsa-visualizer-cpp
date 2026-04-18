@@ -1,0 +1,3 @@
+C:/Users/MALLU/Documents/New project/dsa-visualizer/build/CMakeFiles/DSAVisualizer.dir
+C:/Users/MALLU/Documents/New project/dsa-visualizer/build/CMakeFiles/edit_cache.dir
+C:/Users/MALLU/Documents/New project/dsa-visualizer/build/CMakeFiles/rebuild_cache.dir

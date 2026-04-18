@@ -1,104 +1,179 @@
-# DSA Visualizer (C++ + SFML)
+# 🧠 DSA Visualizer (C++ + SFML)
 
-Interactive desktop visualizer for:
-- Sorting: Bubble, Selection, Insertion, Merge, Quick
-- Graph traversal: BFS, DFS, Dijkstra
+An interactive desktop application to visualize **Data Structures & Algorithms** in real-time using C++ and SFML.
 
-## Features
-- Non-blocking, step-driven animation loop
-- Dark modern UI (1000x700 window)
-- Algorithm dropdown + Start/Pause/Reset controls
-- Runtime speed slider
-- Sorting color states:
-  - Default: white
-  - Comparing: yellow
-  - Swapping/writing: red
-  - Sorted: green
-- Stats panel:
-  - Sorting: comparisons, swaps/writes, steps
-  - Graph: visited nodes, steps
-- Dynamic complexity hint for selected algorithm
+---
 
-## Project Structure
+## 🚀 Features
+
+### 🔢 Sorting Algorithms
+
+* Bubble Sort
+* Selection Sort
+* Insertion Sort
+* Merge Sort
+* Quick Sort
+
+### 🌐 Graph Algorithms
+
+* BFS (Breadth First Search)
+* DFS (Depth First Search)
+* Dijkstra’s Algorithm
+
+---
+
+## 🎨 UI & Visualization
+
+* Dark modern UI (1000x700 window)
+* Algorithm selection dropdown
+* Start / Pause / Reset controls
+* Real-time speed adjustment slider
+
+### 🎯 Color Coding
+
+* ⚪ Default → White
+* 🟡 Comparing → Yellow
+* 🔴 Swapping/Writing → Red
+* 🟢 Sorted → Green
+
+---
+
+## 📊 Stats Panel
+
+* Sorting:
+
+  * Comparisons
+  * Swaps / Writes
+  * Steps
+
+* Graph:
+
+  * Visited Nodes
+  * Steps
+
+* Dynamic time complexity display
+
+---
+
+## ⚙️ Key Highlights
+
+* Non-blocking animation loop (smooth UI)
+* Step-by-step algorithm visualization
+* Modular and clean C++ architecture
+* Built with modern C++ (C++17)
+
+---
+
+## 📁 Project Structure
+
 ```
 dsa-visualizer/
   main.cpp
   CMakeLists.txt
   visualizer/
-    SortingVisualizer.h
-    SortingVisualizer.cpp
-    GraphVisualizer.h
-    GraphVisualizer.cpp
   algorithms/
-    sorting_algorithms.h
-    sorting_algorithms.cpp
-    graph_algorithms.h
-    graph_algorithms.cpp
   ui/
-    Button.h
-    Button.cpp
-    Slider.h
-    Slider.cpp
   utils/
-    constants.h
-    helpers.h
-    helpers.cpp
   assets/
 ```
 
-## Install SFML
+---
 
-### Windows (vcpkg recommended)
-1. Install [vcpkg](https://github.com/microsoft/vcpkg)
-2. Install SFML:
-   ```powershell
-   vcpkg install sfml
-   ```
-3. Configure CMake with vcpkg toolchain:
-   ```powershell
-   cmake -S . -B build -DCMAKE_TOOLCHAIN_FILE=C:/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake
-   cmake --build build --config Release
-   ```
+## 🛠️ Tech Stack
 
-### Ubuntu/Debian
-```bash
-sudo apt update
-sudo apt install -y libsfml-dev
-cmake -S . -B build
-cmake --build build -j
-```
+* C++
+* SFML (Graphics)
+* CMake
 
-## Build and Run
+---
 
-### CMake (cross-platform)
+## ⚡ Build & Run
+
+### 🔹 Using CMake (Recommended)
+
 ```bash
 cmake -S . -B build
 cmake --build build
-./build/DSAVisualizer
 ```
 
-On Windows with multi-config generators:
-```powershell
+Run:
+
+```bash
+build/DSAVisualizer
+```
+
+### 🪟 Windows (Release mode)
+
+```bash
 cmake -S . -B build
 cmake --build build --config Release
 .\build\Release\DSAVisualizer.exe
 ```
 
-### g++ (manual example, Linux/macOS)
+---
+
+## 📦 Dependencies
+
+### SFML Installation
+
+#### 🪟 Windows (Recommended)
+
+Use vcpkg:
+
 ```bash
-g++ -std=c++17 -O2 \
-  main.cpp \
-  visualizer/SortingVisualizer.cpp visualizer/GraphVisualizer.cpp \
-  algorithms/sorting_algorithms.cpp algorithms/graph_algorithms.cpp \
-  ui/Button.cpp ui/Slider.cpp utils/helpers.cpp \
-  -lsfml-graphics -lsfml-window -lsfml-system \
-  -o DSAVisualizer
-./DSAVisualizer
+vcpkg install sfml
 ```
 
-## Notes
-- Font loading order:
-  1. `assets/Roboto-Regular.ttf`
-  2. `assets/Inter-Regular.ttf`
-  3. Windows system fonts (`Segoe UI`, `Arial`)
-- If no font loads, the app exits and prints a clear message.
+Then:
+
+```bash
+cmake -S . -B build -DCMAKE_TOOLCHAIN_FILE=C:/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake
+```
+
+---
+
+#### 🐧 Linux (Ubuntu/Debian)
+
+```bash
+sudo apt update
+sudo apt install -y libsfml-dev
+```
+
+---
+
+## 🔤 Font Handling
+
+The application loads fonts in this order:
+
+1. `assets/Roboto-Regular.ttf`
+2. `assets/Inter-Regular.ttf`
+3. System fonts (Segoe UI, Arial)
+
+If no font is found, the app exits with an error message.
+
+---
+
+## 📸 Demo
+
+👉 Add your screenshot here (very important for recruiters)
+
+---
+
+## 💡 Future Improvements
+
+* Sound effects for sorting
+* More graph algorithms
+* UI enhancements and animations
+* Export visualization as video
+
+---
+
+## 👨‍💻 Author
+
+Mallikarjun Kudalli
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub!
